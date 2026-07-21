@@ -1,10 +1,10 @@
-const UNIT_META = {
-  1: { title: 'Science Fiction' },
-  2: { title: 'Iconic Attractions' },
-  3: { title: 'Sea Exploration' },
-  4: { title: 'Sharing' },
-  5: { title: 'Launching Your Career' },
-};
+const UNIT_META = [
+  { id: "u1", short: "01", label: "Unit 1", title: "Science Fiction", color: "#e55c44" },
+  { id: "u2", short: "02", label: "Unit 2", title: "Iconic Attractions", color: "#25756d" },
+  { id: "u3", short: "03", label: "Unit 3", title: "Sea Exploration", color: "#d4932f" },
+  { id: "u4", short: "04", label: "Unit 4", title: "Sharing", color: "#3972b7" },
+  { id: "u5", short: "05", label: "Unit 5", title: "Launching Your Career", color: "#7a5a9e" }
+];
 
 const RAW_VOCABULARY = {
   1: `
@@ -350,6 +350,6 @@ PETS (Public English Test System)|全国英语等级考试|proper
 const VOCABULARY = Object.entries(RAW_VOCABULARY).flatMap(([unit, raw]) =>
   raw.trim().split("\n").filter(Boolean).map((line, index) => {
     const [word, meaning, type = "core"] = line.split("|");
-    return { id: `${unit}-${index + 1}`, unit: Number(unit), word: word.trim(), meaning: meaning.trim(), type: type.trim() };
+    return { id: `u${unit}-${index + 1}`, unit: `u${unit}`, word: word.trim(), meaning: meaning.trim(), type: type.trim() };
   })
 );

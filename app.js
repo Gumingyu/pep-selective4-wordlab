@@ -48,7 +48,7 @@ function phoneticFor(word) { return PHONETICS[word.toLowerCase()] || ""; }
 function navigate(view) {
   $$(".view").forEach(el => el.classList.toggle("active", el.id === `${view}-view`));
   $$(".nav-item").forEach(el => el.classList.toggle("active", el.dataset.view === view));
-  const titles = { dashboard: "浠婃棩瀛︿範鍙?, practice: "鍗曡瘝妫€娴?, vocabulary: "鍏ㄥ唽鍗曡瘝琛?, mistakes: "閿欒瘝澶嶄範" };
+  const titles = { dashboard: "今日学习台", practice: "单词检测", vocabulary: "全册单词表", mistakes: "错词复习" };
   $("#page-title").textContent = titles[view];
   if (view === "vocabulary") renderVocabulary();
   if (view === "mistakes") renderMistakes();
@@ -67,16 +67,16 @@ function renderDashboard() {
   $("#review-count").textContent = review;
   $("#mastery-rate").textContent = `${rate}%`;
   $("#mastery-bar").style.width = `${rate}%`;
-  $("#streak-days").textContent = `${calculateStreak()} 澶ー;
+  $("#streak-days").textContent = `${calculateStreak()} 天`;
   if (review) {
-    $("#daily-title").textContent = `澶嶄範 ${Math.min(review, 10)} 涓敊璇峘;
-    $("#daily-copy").textContent = "鍏堜慨澶嶆渶杩戠殑璁板繂鏂偣锛屽啀杩涘叆鏂拌瘝璁粌锛屼繚鎸佹纭洖蹇嗙殑杩炵画鎬с€?;
-    $("#daily-action").textContent = "杩涘叆閿欒瘝澶嶄範 鈫?;
+    $("#daily-title").textContent = `复习 ${Math.min(review, 10)} 个错词`;
+    $("#daily-copy").textContent = "先修复最近的记忆断点，再进入新词训练，保持正确回忆的连续性。";
+    $("#daily-action").textContent = "进入错词复习 →";
     $("#daily-action").onclick = () => navigate("mistakes");
   } else {
-    $("#daily-title").textContent = seen.length ? "缁х画宸╁浐宸插鍐呭" : "鍏堝仛涓€娆¤瘖鏂?;
-    $("#daily-copy").textContent = seen.length ? "娣峰悎棰樺瀷浼氫紭鍏堟娊鍙栧皻鏈ǔ瀹氭帉鎻＄殑璇嶃€? : "10 閬撴贩鍚堥浼氬揩閫熸壘鍒版湰鍐屾渶闇€瑕佸涔犵殑璇嶃€?;
-    $("#daily-action").textContent = "杩涘叆浠婃棩璁粌 鈫?;
+    $("#daily-title").textContent = seen.length ? "继续巩固已学内容" : "先做一次诊断";
+    $("#daily-copy").textContent = seen.length ? "混合题型会优先抽取尚未稳定掌握的词。" : "10 道混合题会快速找到本册最需要复习的词。";
+    $("#daily-action").textContent = "进入今日训练 →";
     $("#daily-action").onclick = () => quickStart();
   }
   $("#unit-grid").innerHTML = UNIT_META.map(unit => {
@@ -84,8 +84,8 @@ function renderDashboard() {
     const masteredCount = words.filter(item => masteryFor(item) >= 3).length;
     const rate = words.length ? Math.round(masteredCount / words.length * 100) : 0;
     return `<article class="unit-card" data-unit="${unit.id}" style="--unit:${unit.color}">
-      <div class="unit-card-top"><span class="unit-number">${unit.short}</span><span class="unit-status">${rate ? `${rate}% 鎺屾彙` : "灏氭湭寮€濮?}</span></div>
-      <h3>${unit.title}</h3><p>${words.length} 涓牳蹇冭瘝鏉?/p><div class="mini-track"><i style="width:${rate}%"></i></div>
+      <div class="unit-card-top"><span class="unit-number">${unit.short}</span><span class="unit-status">${rate ? `${rate}% 掌握` : "尚未开始"}</span></div>
+      <h3>${unit.title}</h3><p>${words.length} 个核心词条</p><div class="mini-track"><i style="width:${rate}%"></i></div>
     </article>`;
   }).join("");
   $$(".unit-card").forEach(card => card.onclick = () => openUnit(card.dataset.unit));
@@ -105,7 +105,7 @@ function calculateStreak() {
 function renderSetup() {
   $("#unit-selector").innerHTML = UNIT_META.map(unit => {
     const count = coreVocabulary().filter(item => item.unit === unit.id).length;
-    return `<button class="unit-choice ${state.selectedUnits.has(unit.id) ? "selected" : ""}" data-unit="${unit.id}" style="--unit:${unit.color}"><strong>${unit.label}</strong><span>${unit.title} 路 ${count} 璇?/span></button>`;
+    return `<button class="unit-choice ${state.selectedUnits.has(unit.id) ? "selected" : ""}" data-unit="${unit.id}" style="--unit:${unit.color}"><strong>${unit.label}</strong><span>${unit.title} · ${count} 词</span></button>`;
   }).join("");
   $$(".unit-choice").forEach(button => button.onclick = () => {
     const id = button.dataset.unit;
@@ -177,11 +177,11 @@ function showQuestion() {
   const meta = unitMeta(item.unit);
   $("#quiz-position").textContent = `${state.currentIndex + 1} / ${state.queue.length}`;
   $("#quiz-progress-bar").style.width = `${state.currentIndex / state.queue.length * 100}%`;
-  $("#quiz-unit").textContent = `${meta.label} 路 ${meta.title}`;
-  $("#combo-label").textContent = `杩炲嚮 ${state.combo}`;
-  $("#question-label").textContent = mode === "en-zh" ? "璇烽€夋嫨鏈€鍑嗙‘鐨勪腑鏂囬噴涔? : "鏍规嵁閲婁箟鍐欏嚭鑻辨枃鍗曡瘝鎴栫煭璇?;
+  $("#quiz-unit").textContent = `${meta.label} · ${meta.title}`;
+  $("#combo-label").textContent = `连击 ${state.combo}`;
+  $("#question-label").textContent = mode === "en-zh" ? "请选择最准确的中文释义" : "根据释义写出英文单词或短语";
   $("#question-word").textContent = mode === "en-zh" ? item.word : item.meaning;
-  $("#question-extra").textContent = mode === "en-zh" ? ([phoneticFor(item.word), item.type === "extra" ? "鎷撳睍璇? : "鏁欐潗鏍稿績璇?].filter(Boolean).join(" 路 ")) : `${meta.label} 路 娉ㄦ剰鎷煎啓`;
+  $("#question-extra").textContent = mode === "en-zh" ? ([phoneticFor(item.word), item.type === "extra" ? "拓展词" : "教材核心词"].filter(Boolean).join(" · ")) : `${meta.label} · 注意拼写`;
   $("#speak-word").classList.toggle("hidden", mode !== "en-zh");
   $("#speak-word").onclick = () => speak(item.word);
   $("#feedback").classList.add("hidden");
@@ -197,7 +197,7 @@ function renderChoices(item) {
 }
 
 function renderTextAnswer(item) {
-  $("#answer-area").innerHTML = `<div class="text-answer-wrap"><input class="text-answer" id="text-answer" autocomplete="off" autocapitalize="none" spellcheck="false" placeholder="杈撳叆鑻辨枃绛旀"><button class="primary-button submit-answer" id="submit-text">鎻愪氦绛旀</button></div>`;
+  $("#answer-area").innerHTML = `<div class="text-answer-wrap"><input class="text-answer" id="text-answer" autocomplete="off" autocapitalize="none" spellcheck="false" placeholder="输入英文答案"><button class="primary-button submit-answer" id="submit-text">提交答案</button></div>`;
   const input = $("#text-answer");
   input.focus();
   $("#submit-text").onclick = () => submitText(input.value, item);
@@ -205,7 +205,7 @@ function renderTextAnswer(item) {
 }
 
 function normalise(text) {
-  return text.toLowerCase().replace(/[.鈥?)]/g, "").replace(/sth/g, "").replace(/\s+/g, " ").trim();
+  return text.toLowerCase().replace(/[.…()]/g, "").replace(/sth/g, "").replace(/\s+/g, " ").trim();
 }
 
 function submitChoice(button, item) {
@@ -244,11 +244,11 @@ function finishAnswer(correct, item, given = "") {
   progress.last = Date.now(); state.progress[item.id] = progress; saveState();
   const feedback = $("#feedback");
   feedback.innerHTML = correct
-    ? `<strong>鍥炵瓟姝ｇ‘</strong>${item.word}锛?{item.meaning}`
-    : `<strong>${given ? `浣犵殑绛旀锛?{given}` : "杩欓闇€瑕佸啀鐪嬩竴娆?}</strong>姝ｇ‘绛旀鏄?<b>${item.word}</b>锛?{item.meaning}`;
+    ? `<strong>回答正确</strong>${item.word}：${item.meaning}`
+    : `<strong>${given ? `你的答案：${given}` : "这题需要再看一次"}</strong>正确答案是 <b>${item.word}</b>：${item.meaning}`;
   feedback.classList.remove("hidden");
-  $("#combo-label").textContent = `杩炲嚮 ${state.combo}`;
-  $("#next-question").textContent = state.currentIndex === state.queue.length - 1 ? "鏌ョ湅缁撴灉" : "涓嬩竴棰?;
+  $("#combo-label").textContent = `连击 ${state.combo}`;
+  $("#next-question").textContent = state.currentIndex === state.queue.length - 1 ? "查看结果" : "下一题";
   $("#next-question").classList.remove("hidden");
 }
 
@@ -262,9 +262,9 @@ function showResults() {
   const rate = Math.round(state.correct / state.queue.length * 100);
   state.sessions.push({ date: new Date().toISOString().slice(0, 10), score: rate, count: state.queue.length }); saveState();
   $("#result-score").textContent = `${rate}%`;
-  $("#result-title").textContent = rate >= 90 ? "璁板繂鎻愬彇寰堢ǔ瀹? : rate >= 70 ? "鍩虹涓嶉敊锛岀户缁珐鍥? : "钖勫急璇嶅凡缁忓畾浣?;
-  $("#result-copy").textContent = rate >= 90 ? "鍙互鍒囨崲鍗曞厓鎴栧鍔犱腑璇戣嫳棰橈紝缁х画鎻愰珮涓诲姩鎷煎啓鑳藉姏銆? : "鍏堝涔犳湰杞敊璇嶏紝鍐嶈繘琛屼笅涓€杞紝鏁堟灉姣旂珛鍗冲埛澶ч噺鏂伴鏇村ソ銆?;
-  $("#result-stats").innerHTML = `<div><strong>${state.correct}</strong><span>绛斿</span></div><div><strong>${state.queue.length - state.correct}</strong><span>寰呭涔?/span></div><div><strong>${state.maxCombo}</strong><span>鏈€楂樿繛鍑?/span></div>`;
+  $("#result-title").textContent = rate >= 90 ? "记忆提取很稳定" : rate >= 70 ? "基础不错，继续巩固" : "薄弱词已经定位";
+  $("#result-copy").textContent = rate >= 90 ? "可以切换单元或增加中译英题，继续提高主动拼写能力。" : "先复习本轮错词，再进行下一轮，效果比立即刷大量新题更好。";
+  $("#result-stats").innerHTML = `<div><strong>${state.correct}</strong><span>答对</span></div><div><strong>${state.queue.length - state.correct}</strong><span>待复习</span></div><div><strong>${state.maxCombo}</strong><span>最高连击</span></div>`;
   $("#retry-mistakes").disabled = !state.sessionMistakes.length;
 }
 
@@ -288,9 +288,9 @@ function renderVocabulary() {
   $("#vocab-result-count").textContent = filtered.length;
   $("#vocab-list").innerHTML = filtered.map(item => {
     const meta = unitMeta(item.unit);
-    const label = item.type === "proper" ? "涓撴湁鍚嶈瘝" : item.type === "extra" ? "鎷撳睍璇? : "璇炬爣鏍稿績";
+    const label = item.type === "proper" ? "专有名词" : item.type === "extra" ? "拓展词" : "课标核心";
     const phonetic = phoneticFor(item.word);
-    return `<div class="vocab-row" style="--unit:${meta.color}"><span class="unit-tag">${meta.label}</span><div class="vocab-word">${item.word}<small>${phonetic || label}${phonetic ? ` 路 ${label}` : ""}</small></div><div class="vocab-meaning">${item.meaning}</div><button class="speak-button" data-speak="${item.id}" title="鏈楄 ${item.word}">鈼?)</button></div>`;
+    return `<div class="vocab-row" style="--unit:${meta.color}"><span class="unit-tag">${meta.label}</span><div class="vocab-word">${item.word}<small>${phonetic || label}${phonetic ? ` · ${label}` : ""}</small></div><div class="vocab-meaning">${item.meaning}</div><button class="speak-button" data-speak="${item.id}" title="朗读 ${item.word}">◖))</button></div>`;
   }).join("");
   $$('[data-speak]').forEach(button => button.onclick = () => speak(VOCABULARY.find(item => item.id === button.dataset.speak).word));
 }
@@ -299,7 +299,7 @@ function renderMistakes() {
   const items = Object.entries(state.mistakes).sort((a, b) => b[1].last - a[1].last).map(([id, stats]) => ({ item: VOCABULARY.find(v => v.id === id), stats })).filter(x => x.item);
   $("#mistake-empty").classList.toggle("hidden", items.length > 0);
   $("#mistake-content").classList.toggle("hidden", items.length === 0);
-  $("#mistake-list").innerHTML = items.map(({ item, stats }) => `<article class="mistake-card"><small>${unitMeta(item.unit).label} 路 閿欒 ${stats.count} 娆?/small><strong>${item.word}</strong><span>${item.meaning}</span></article>`).join("");
+  $("#mistake-list").innerHTML = items.map(({ item, stats }) => `<article class="mistake-card"><small>${unitMeta(item.unit).label} · 错误 ${stats.count} 次</small><strong>${item.word}</strong><span>${item.meaning}</span></article>`).join("");
 }
 
 function initControls() {
@@ -326,9 +326,8 @@ function initControls() {
 
 function init() {
   loadState();
-  $("#vocab-unit-filter").innerHTML = `<option value="all">鍏ㄩ儴鍗曞厓</option>` + UNIT_META.map(unit => `<option value="${unit.id}">${unit.label}</option>`).join("");
+  $("#vocab-unit-filter").innerHTML = `<option value="all">全部单元</option>` + UNIT_META.map(unit => `<option value="${unit.id}">${unit.label}</option>`).join("");
   initControls(); renderSetup(); renderDashboard(); renderVocabulary(); renderMistakes();
 }
 
 init();
-

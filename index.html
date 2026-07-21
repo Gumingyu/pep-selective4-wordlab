@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f3f5f0">
+  <title>WordLab 路 鑻辫閫夋嫨鎬у繀淇鍥涘唽</title>
+  <link rel="stylesheet" href="styles.css?v=20260721b4">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-mark">W</div>
+        <div><strong>WordLab</strong><span>鑻辫閫夋嫨鎬у繀淇鍥涘唽</span></div>
+      </div>
+
+      <nav class="main-nav" aria-label="涓诲鑸?>
+        <button class="nav-item active" data-view="dashboard"><span>鈱?/span>瀛︿範鍙?/button>
+        <button class="nav-item" data-view="practice"><span>鈼?/span>寮€濮嬫娴?/button>
+        <button class="nav-item" data-view="vocabulary"><span>鈻?/span>鍗曡瘝琛?/button>
+        <button class="nav-item" data-view="mistakes"><span>鈫?/span>閿欒瘝鏈?/button>
+      </nav>
+
+      <div class="book-panel">
+        <img src="assets/textbook-cover.jpg" alt="浜烘暀鐗堥珮涓嫳璇€夋嫨鎬у繀淇鍥涘唽灏侀潰">
+        <div><span>鏁欐潗鑼冨洿</span><strong>Selective Compulsory 4 路 5 Units</strong></div>
+      </div>
+      <button id="theme-toggle" class="icon-button" title="鍒囨崲鏄庢殫涓婚" aria-label="鍒囨崲鏄庢殫涓婚">鈼?/button>
+    </aside>
+
+    <main class="workspace">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">PEP 路 SELECTIVE BOOK 4</p>
+          <h1 id="page-title">浠婃棩瀛︿範鍙?/h1>
+        </div>
+        <div class="top-actions">
+          <div class="streak"><span>杩炵画瀛︿範</span><strong id="streak-days">0 澶?/strong></div>
+          <button id="quick-start" class="primary-button">寮€濮?10 棰?/button>
+        </div>
+      </header>
+
+      <section id="dashboard-view" class="view active">
+        <div class="overview-grid">
+          <article class="progress-panel">
+            <div class="panel-head"><div><span class="kicker">鍏ㄥ唽杩涘害</span><h2>鎶婅杽寮辫瘝鍙樻垚鐔熻瘝</h2></div><span id="mastery-rate" class="big-rate">0%</span></div>
+            <div class="progress-track"><i id="mastery-bar"></i></div>
+            <div class="metrics">
+              <div><span>宸茬粌涔?/span><strong id="seen-count">0</strong></div>
+              <div><span>绋冲畾鎺屾彙</span><strong id="mastered-count">0</strong></div>
+              <div><span>寰呭涔?/span><strong id="review-count">0</strong></div>
+            </div>
+          </article>
+          <article class="daily-panel">
+            <span class="kicker">浠婃棩寤鸿</span>
+            <h2 id="daily-title">鍏堝仛涓€娆¤瘖鏂?/h2>
+            <p id="daily-copy">10 閬撴贩鍚堥浼氬揩閫熸壘鍒版湰鍐屾渶闇€瑕佸涔犵殑璇嶃€?/p>
+            <button id="daily-action" class="text-button">杩涘叆浠婃棩璁粌 <span>鈫?/span></button>
+          </article>
+        </div>
+
+        <div class="section-heading"><div><span class="kicker">鎸夊崟鍏冨涔?/span><h2>璇剧▼鍦板浘</h2></div><button id="all-units" class="ghost-button">鍏ㄥ唽缁煎悎</button></div>
+        <div id="unit-grid" class="unit-grid"></div>
+      </section>
+
+      <section id="practice-view" class="view">
+        <div id="setup-panel" class="setup-layout">
+          <div class="setup-main">
+            <span class="kicker">璁粌璁剧疆</span><h2>閫夋嫨浠婂ぉ鐨勭粌涔犺寖鍥?/h2>
+            <div id="unit-selector" class="unit-selector"></div>
+            <div class="setting-row">
+              <div><strong>棰樼洰鏁伴噺</strong><span>鐭洖鍚堟洿瀹规槗淇濇寔涓撴敞</span></div>
+              <div class="segmented" id="count-selector"><button data-count="10" class="active">10</button><button data-count="20">20</button><button data-count="30">30</button></div>
+            </div>
+            <div class="setting-row">
+              <div><strong>璁粌妯″紡</strong><span>娣峰悎璁粌浼氱┛鎻掍笉鍚屾彁鍙栫嚎绱?/span></div>
+              <div class="segmented mode-segments" id="mode-selector"><button data-mode="mixed" class="active">娣峰悎</button><button data-mode="en-zh">鑻辫瘧涓?/button><button data-mode="zh-en">涓瘧鑻?/button></div>
+            </div>
+          </div>
+          <aside class="setup-summary">
+            <span class="kicker">鏈疆棰勮</span><strong id="pool-count">0</strong><span>涓彲鐢ㄨ瘝鏉?/span>
+            <div class="rule"></div>
+            <p>閿欒瘝浼氬湪鍚庣画棰樼洰涓啀娆″嚭鐜帮紱绛旈敊涓嶄細娓呯┖杩炲嚮杩涘害銆?/p>
+            <button id="start-session" class="primary-button full">寮€濮嬭缁?/button>
+          </aside>
+        </div>
+
+        <div id="quiz-panel" class="quiz-panel hidden">
+          <div class="quiz-top"><button id="quit-quiz" class="icon-button" title="閫€鍑烘湰杞? aria-label="閫€鍑烘湰杞?>脳</button><div class="quiz-progress"><i id="quiz-progress-bar"></i></div><span id="quiz-position">1 / 10</span></div>
+          <div class="quiz-meta"><span id="quiz-unit">Unit 1</span><span id="combo-label">杩炲嚮 0</span></div>
+          <div class="question-area">
+            <p id="question-label">璇烽€夋嫨姝ｇ‘閲婁箟</p>
+            <div class="word-line"><h2 id="question-word">challenge</h2><button id="speak-word" class="speak-button" title="鏈楄鍗曡瘝" aria-label="鏈楄鍗曡瘝">鈼?)</button></div>
+            <p id="question-extra"></p>
+            <div id="answer-area" class="answer-area"></div>
+            <div id="feedback" class="feedback hidden"></div>
+          </div>
+          <button id="next-question" class="primary-button next hidden">涓嬩竴棰?/button>
+        </div>
+
+        <div id="result-panel" class="result-panel hidden">
+          <span class="result-label">鏈疆瀹屾垚</span><div id="result-ring" class="result-ring"><strong id="result-score">0%</strong><span>姝ｇ‘鐜?/span></div>
+          <h2 id="result-title">涓€娆℃湁鏁堢殑璇婃柇</h2><p id="result-copy"></p>
+          <div id="result-stats" class="result-stats"></div>
+          <div class="result-actions"><button id="retry-mistakes" class="ghost-button">澶嶄範鏈疆閿欒瘝</button><button id="back-dashboard" class="primary-button">杩斿洖瀛︿範鍙?/button></div>
+        </div>
+      </section>
+
+      <section id="vocabulary-view" class="view">
+        <div class="vocab-tools">
+          <label class="search-box"><span>鈱?/span><input id="vocab-search" type="search" placeholder="鎼滅储鍗曡瘝銆佺煭璇垨涓枃閲婁箟"></label>
+          <select id="vocab-unit-filter" aria-label="鎸夊崟鍏冪瓫閫?></select>
+          <select id="vocab-type-filter" aria-label="鎸夎瘝鏉＄被鍨嬬瓫閫?><option value="all">鍏ㄩ儴绫诲瀷</option><option value="core">璇炬爣璇嶄笌鐭</option><option value="extra">闈炶鏍囪瘝</option><option value="proper">涓撴湁鍚嶈瘝</option></select>
+          <button id="print-list" class="icon-button" title="鎵撳嵃鍗曡瘝琛? aria-label="鎵撳嵃鍗曡瘝琛?>鈻?/button>
+        </div>
+        <div class="vocab-summary"><strong id="vocab-result-count">0</strong><span>涓瘝鏉?/span><div class="legend"><i class="core-dot"></i>璇炬爣鏍稿績 <i class="extra-dot"></i>鎷撳睍璇?/div></div>
+        <div id="vocab-list" class="vocab-list"></div>
+      </section>
+
+      <section id="mistakes-view" class="view">
+        <div class="empty-state" id="mistake-empty"><span>鉁?/span><h2>閿欒瘝鏈洰鍓嶆槸绌虹殑</h2><p>瀹屾垚妫€娴嬪悗锛岀瓟閿欑殑璇嶄細鑷姩鏀堕泦鍦ㄨ繖閲屻€?/p><button class="primary-button" data-go-practice>寮€濮嬫娴?/button></div>
+        <div id="mistake-content" class="hidden"><div class="section-heading"><div><span class="kicker">鑷姩鏀堕泦</span><h2>闇€瑕佸啀瑙佷竴娆＄殑璇?/h2></div><button id="practice-mistakes" class="primary-button">涓撻」澶嶄範</button></div><div id="mistake-list" class="mistake-list"></div></div>
+      </section>
+    </main>
+  </div>
+
+  <script src="vocabulary.js?v=20260721b4"></script>
+  <script src="phonetics.js?v=20260721b4"></script>
+  <script src="app.js?v=20260721b4"></script>
+</body>
+</html>
+

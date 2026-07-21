@@ -8,342 +8,342 @@ const UNIT_META = {
 
 const RAW_VOCABULARY = {
   1: `
-fiction|n. 灏忚锛涜櫄鏋勭殑浜媩core
-science fiction|绉戝够灏忚锛堟垨褰辩墖绛夛級|core
-test out|妫€楠岋紱娴嬭瘯|core
-bonus|n. 鎰忓鏀惰幏锛涘閲戯紱绾㈠埄|core
-more like|鏇村儚鏄紱鏇存帴杩憒core
-ridiculous|adj. 鎰氳牏鐨勶紱鑽掕艾鐨勶紱 鑽掑攼鐨剕extra
-integrity|n. 璇氬疄姝ｇ洿锛涘畬鏁达紱瀹屽ソ|core
-dignity|n. 搴勯噸锛涘簞涓ワ紱灏婁弗|core
-salary|n. 钖按锛涜柂閲憒core
-absurd|adj. 鑽掕艾鐨勶紱鑽掑攼鐨剕extra
-appointment|n. 棰勭害锛涚害浼氾紱濮斾换|core
-nail|n. 鎸囩敳锛涜毒鐢诧紱閽夊瓙 vt.锛堢敤閽夊瓙锛夐拤鐗紱鍥哄畾|core
-saleswoman|n. 濂冲敭璐у憳锛涘コ鎺ㄩ攢鍛榺core
-guilty|adj. 鍐呯枤鐨勶紱鏈夌姜鐨勶紱鏈夎繃澶辩殑|core
-suspend|vt. 鎮紱鎸傦紱鏆傚仠锛涙殏缂搢core
-ladder|n. 姊瓙锛涢樁姊瘄extra
-dismiss|vt. 璁╋紙鏌愪汉锛夌寮€锛涜В鏁ｏ紱 瑙ｉ泧锛涙秷闄core
-declare|vt. 琛ㄦ槑锛涘绉帮紱鍏竷|core
-whereas|conj. 鐒惰€岋紱浣嗘槸锛涘敖绠extra
-rumour|n. 璋ｈ█锛涗紶闂粅extra
-presume|vt. & vi. 鍋囪锛涘亣瀹殀extra
-fare|n. 杞﹁垂锛涜埞璐癸紱椋炴満绁ㄤ环|extra
-weekly|adj. 姣忓懆鐨?n. 鍛ㄥ垔|core
-on a 鈥?basis|鏍规嵁锛涗互鈥︹€︾殑鏂瑰紡锛堝熀鍑嗭級|core
-calculate|vt. 璁＄畻锛涙牳绠楋紱棰勬祴|core
-chairwoman|n. 濂充富甯紱濂宠懀浜嬮暱锛涘コ濮斿憳闀縷core
-gramme (NAmE gram)|n. 鍏嬶紙閲嶉噺鍗曚綅锛墊core
-flour|n. 闈㈢矇锛涳紙璋风墿纾ㄦ垚鐨勶級绮墊core
-venue|n. 娲诲姩鍦哄湴锛堝闊充箰鍘呫€佷細鍦虹瓑锛墊core
-salesman|n. 鍞揣鍛橈紱鎺ㄩ攢鍛榺core
-alien|n. 澶栨槦浜猴紙鐢熺墿锛夛紱澶栧浗浜?adj. 闄岀敓鐨勶紱澶栨槦鐨勶紱澶栧浗鐨剕extra
-pros and cons|浜嬬墿鐨勫埄涓庡紛锛涙敮鎸佷笌鍙嶅|core
-blurred|adj. 妯＄硦涓嶆竻鐨勶紱闅句互鍖哄垎鐨剕extra
-superior|adj. 鏇村ソ鐨勶紱鍗犱紭鍔跨殑锛涳紙鍦ㄧ骇鍒垨閲嶈鎬т笂锛夋洿楂樼殑|core
-superior to|姣斺€︹€︽洿濂斤紱鏇磋儨涓€绛箌core
-take over|鍗犱笂椋庯紱鍙栬€屼唬涔嬶紱鎺ョ锛涙帴鎵媩core
-inaction|n. 鏃犺鍔紱涓嶉噰鍙栨帾鏂絴extra
-conflict with|涓庘€︹€﹀啿绐佹垨鎶佃Е|core
-labour|n. 鍔冲姩锛堣€咃級锛涗綋鍔涘姵鍔?vi. 濂嬫枟锛涘姫鍔涘伐浣渱core
-leather|n. 鐨潻锛沎pl.] 鐨。锛涚毊澶栧|core
-lever|n. 鎿嶇旱鏉嗭紱鏉犳潌|extra
-panel|n. 鎺у埗鏉匡紱浠〃鐩橈紱涓撳鍜ㄨ缁剕core
-inch|n. 鑻卞锛堥暱搴﹀崟浣嶏紝绛変簬 2.54 鍘樼背锛墊core
-backwards (NAmE backward)|adv. 鍚戝悗锛涘€掔潃锛涘線鍥瀨core
-grip|vt. & vi. 绱ф彙锛涙姄绱extra
-hazy|adj. 妯＄硦鐨勶紱鏈﹁儳鐨勶紱鍥版儜鐨剕extra
-niece|n. 渚勫コ锛涘鐢ュコ|core
-fetch|vt.锛堝幓锛夋嬁鏉ワ紱锛堝幓锛夎鏉core
-handkerchief|n. 鎵嬪笗锛涚焊宸緗core
-lamp|n. 鐏紱鍙扮伅|core
-turn out|鍏虫帀锛涚唲鐏紱鍦ㄥ満锛涗娇鏈濆锛涚粨鏋滄槸|core
-pace|n. 閫熷害锛涙浼愶紱鑺傚 vt. & vi. 纭畾閫熷害锛涜皟鏁磋妭濂弢core
-fall away|锛堥€愭笎锛夊噺灏戯紱娑堝け|core
-division|n. 鍒嗗紑锛涘垎闅旓紱宸紓锛涢櫎锛堟硶锛墊core
-puff|n. 锛堢儫銆佹皵绛夌殑锛変竴缂曪紱灏戦噺锛涘枠鎭瘄extra
-urge|n. 寮虹儓鐨勬鏈涳紱鍐插姩 vt. 鍌績锛涘姏鍔濓紱澶у姏鎺ㄨ崘|core
-have an urge to|鏈夊己鐑堢殑娆叉湜鍋氭煇浜媩core
-random|adj. 闅忔満鐨勶紱涓嶅彲鎬濊鐨剕core
-maximum|adj. 鏈€澶ф瀬闄愮殑 n. 鏈€澶ч噺锛涙渶澶ч檺搴core
-explode|vi. & vt. 鐖嗙偢锛涚垎鐮磡core
-jolt|n. 闇囧姩锛涙憞鏅冿紱棰犵案 vt. & vi.锛堜娇锛夐渿鍔紱鎽囨檭|extra
-flip|vt. & vi.锛堜娇锛夊揩閫熺炕杞紱锛堢敤鎵嬫寚锛夎交鎶泑extra
-stun|vt. 浣块渿鎯婏紱 浣挎槒杩穦extra
-mud|n. 娉ワ紱娉ユ祮|core
-overstatement|n. 澶稿ぇ锛涘じ寮爘extra
-Isaac Asimov|鑹捐惃鍏嬄烽樋瑗胯帿澶珅proper
-Larry Belmont|鎷夐噷路璐濆皵钂欑壒|proper
-Claire|鍏嬭幈灏攟proper
-Gladys Claffern|鏍兼媺杩笣路鍏嬫媺鑺瑋proper
-Braille (also braille)|甯冩媺鑰剁洸鏂囷紙鍑哥偣绗﹀彿锛墊proper
-The Three-Body Problem|銆婁笁浣撱€媩proper
-Hugo Award|闆ㄦ灉濂東proper
+fiction|n. 小说；虚构的事|core
+science fiction|科幻小说（或影片等）|core
+test out|检验；测试|core
+bonus|n. 意外收获；奖金；红利|core
+more like|更像是；更接近|core
+ridiculous|adj. 愚蠢的；荒谬的； 荒唐的|extra
+integrity|n. 诚实正直；完整；完好|core
+dignity|n. 庄重；庄严；尊严|core
+salary|n. 薪水；薪金|core
+absurd|adj. 荒谬的；荒唐的|extra
+appointment|n. 预约；约会；委任|core
+nail|n. 指甲；趾甲；钉子 vt.（用钉子）钉牢；固定|core
+saleswoman|n. 女售货员；女推销员|core
+guilty|adj. 内疚的；有罪的；有过失的|core
+suspend|vt. 悬；挂；暂停；暂缓|core
+ladder|n. 梯子；阶梯|extra
+dismiss|vt. 让（某人）离开；解散； 解雇；消除|core
+declare|vt. 表明；宣称；公布|core
+whereas|conj. 然而；但是；尽管|extra
+rumour|n. 谣言；传闻|extra
+presume|vt. & vi. 假设；假定|extra
+fare|n. 车费；船费；飞机票价|extra
+weekly|adj. 每周的 n. 周刊|core
+on a … basis|根据；以……的方式（基准）|core
+calculate|vt. 计算；核算；预测|core
+chairwoman|n. 女主席；女董事长；女委员长|core
+gramme (NAmE gram)|n. 克（重量单位）|core
+flour|n. 面粉；（谷物磨成的）粉|core
+venue|n. 活动场地（如音乐厅、会场等）|core
+salesman|n. 售货员；推销员|core
+alien|n. 外星人（生物）；外国人 adj. 陌生的；外星的；外国的|extra
+pros and cons|事物的利与弊；支持与反对|core
+blurred|adj. 模糊不清的；难以区分的|extra
+superior|adj. 更好的；占优势的；（在级别或重要性上）更高的|core
+superior to|比……更好；更胜一筹|core
+take over|占上风；取而代之；接管；接手|core
+inaction|n. 无行动；不采取措施|extra
+conflict with|与……冲突或抵触|core
+labour|n. 劳动（者）；体力劳动 vi. 奋斗；努力工作|core
+leather|n. 皮革；[pl.] 皮衣；皮外套|core
+lever|n. 操纵杆；杠杆|extra
+panel|n. 控制板；仪表盘；专家咨询组|core
+inch|n. 英寸（长度单位，等于 2.54 厘米）|core
+backwards (NAmE backward)|adv. 向后；倒着；往回|core
+grip|vt. & vi. 紧握；抓紧|extra
+hazy|adj. 模糊的；朦胧的；困惑的|extra
+niece|n. 侄女；外甥女|core
+fetch|vt.（去）拿来；（去）请来|core
+handkerchief|n. 手帕；纸巾|core
+lamp|n. 灯；台灯|core
+turn out|关掉；熄灭；在场；使朝外；结果是|core
+pace|n. 速度；步伐；节奏 vt. & vi. 确定速度；调整节奏|core
+fall away|（逐渐）减少；消失|core
+division|n. 分开；分隔；差异；除（法）|core
+puff|n. （烟、气等的）一缕；少量；喘息|extra
+urge|n. 强烈的欲望；冲动 vt. 催促；力劝；大力推荐|core
+have an urge to|有强烈的欲望做某事|core
+random|adj. 随机的；不可思议的|core
+maximum|adj. 最大极限的 n. 最大量；最大限度|core
+explode|vi. & vt. 爆炸；爆破|core
+jolt|n. 震动；摇晃；颠簸 vt. & vi.（使）震动；摇晃|extra
+flip|vt. & vi.（使）快速翻转；（用手指）轻抛|extra
+stun|vt. 使震惊； 使昏迷|extra
+mud|n. 泥；泥浆|core
+overstatement|n. 夸大；夸张|extra
+Isaac Asimov|艾萨克·阿西莫夫|proper
+Larry Belmont|拉里·贝尔蒙特|proper
+Claire|克莱尔|proper
+Gladys Claffern|格拉迪丝·克拉芬|proper
+Braille (also braille)|布拉耶盲文（凸点符号）|proper
+The Three-Body Problem|《三体》|proper
+Hugo Award|雨果奖|proper
 `,
   2: `
-iconic|adj. 绗﹀彿鐨勶紱鍥炬爣鐨剕extra
-foundation|n. 鍒涘缓锛涘熀纭€锛涘湴鍩簗core
-political|adj. 鏀挎不鐨剕core
-didgeridoo|n. 杩悏閲屾潨绠extra
-located|adj. 浣嶄簬|extra
-equator|n. 璧ら亾|core
-barbecue (abbr. BBQ)|n. (abbr. BBQ) 鎴峰鐑х儰锛涚儰鏋秥core
-bakery|n. 闈㈠寘锛堢硶楗硷級搴楋紱闈㈠寘鍘倈core
-joint|n. 鍏叡鍦烘墍锛堝挨鎸囦环鏍间綆寤夌殑楗鍜屽ū涔愬満鎵€锛夛紱 鍏宠妭 adj. 鑱斿悎鐨勶紱鍏卞悓鐨剕core
-butcher|n. 鑲夎穿锛涘睜澶紱鍒藉瓙鎵媩core
-premier|adj. 鏈€钁楀悕鐨勶紱绗竴鐨勶紱棣栬鐨?n. 鎬荤悊锛涢鐩竱core
-herb|n. 鑽崏锛涢鑽夛紱鑽夋湰|core
-dim sim|锛堢壒鎸囨境澶у埄浜氱殑锛夌偣蹇億extra
-hollow|adj. 涓┖鐨勶紱绌哄績鐨剕extra
-vibrate|vt. & vi.锛堜娇锛夋尟鍔▅extra
-horn|n.锛堜箰鍣級鍙穦extra
-pitch|n. 闊抽珮|extra
-straightforward|adj. 鍧︾巼鐨勶紱绠€鍗曠殑|core
-slogan|n. 鏍囪锛涘彛鍙穦extra
-minister|n. 閮ㄩ暱锛涘ぇ鑷ｏ紱澶栦氦浣胯妭|core
-prime minister|棣栫浉锛涙€荤悊|core
-frog|n. 铔欙紱闈掕洐|core
-arrow|n. 绠紱绠ご|core
-entitle|vt. 缁欌€︹€﹀懡鍚嶏紙鎴栭鍚嶏級锛涗娇浜湁鏉冨埄|core
-getaway|n. 閫傚悎搴﹀亣鐨勫湴鏂箌extra
-dive|vi. & n.锛坉ived/dove, dived锛?娼滄按锛涜烦姘达紱淇啿|core
-kayaking|n. 鍒掔毊鑹噟extra
-peak season|楂樺嘲瀛ｈ妭|core
-freedom|n. 鑷敱锛涗笉鍙椻€︹€﹀奖鍝嶇殑鐘舵€亅core
-domain|n. 棰嗗煙锛涢鍦燂紱鑼冨洿|core
-sponsor|vt. 鍊¤锛涜禐鍔╋紱涓诲姙 n.锛堟硶妗堢瓑鐨勶級鍊¤鑰咃紱璧炲姪鑰厊core
-liberty|n. 鑷敱|core
-golf|n. 楂樺皵澶悆杩愬姩|core
-strait|n. 娴峰场|core
-sample|n. 鏍锋湰锛涙牱鍝亅core
-monument|n. 绾康纰戯紙鎴栭銆佸爞銆佸儚绛夛級锛涘巻鍙查仐杩箌extra
-kiwi|n. 鍑犵淮锛堟柊瑗垮叞楦燂級|extra
-geyser|n. 闂存瓏娉墊extra
-sulphuric pool|纭粍姹爘extra
-manuka honey|楹﹀崲鍗¤渹铚渱extra
-bungee jumping|韫︽瀬璺硘extra
-a flock of|涓€缇わ紙缇婃垨楦燂級|core
-geothermal park|鍦扮儹鍏洯|extra
-distribution|n. 鍒嗗竷锛涘垎閰嶏紱鍒嗗彂|core
-pouch|n. 鑲插効琚嬶紱灏忚瀛愶紱鑽峰寘|extra
-temporary|adj. 鏆傛椂鐨勶紱鐭殏鐨剕core
-phase|n. 闃舵锛涙椂鏈焲core
-trunk|n. 鏍戝共|core
-licensed|adj. 寰楀埌姝ｅ紡璁稿彲鐨剕extra
-license|vt. 鎵瑰噯锛涜鍙?n.锛? licence锛夎鍙瘉锛涙墽鐓core
-session|n. 涓€鍦猴紱涓€娈垫椂闂达紱浼氳|core
-frequency|n. 鍙戠敓鐜囷紱閲嶅鐜囷紱 锛堝０娉㈡垨鐢电娉㈡尟鍔ㄧ殑锛夐鐜噟core
-violent|adj. 鏆村姏鐨勶紱鐚涚儓鐨剕extra
-violence|n. 鏆村姏锛涙毚琛寍core
-nest|n. 宸㈢┐锛涢笩绐濓紱绉樺瘑绐濈偣|core
-mammal|n. 鍝轰钩鍔ㄧ墿|extra
-biology|n. 鐢熺悊锛涚敓鐗╁|core
-hatch|vi. 瀛靛嚭锛涚牬澹?鐨?vt. 浣垮鍑猴紱绛栧垝锛涳紙灏ゆ寚锛夊瘑璋媩core
-capacity|n. 鑳藉姏锛涘閲弢core
-a handful of|灏戞暟浜猴紙鎴栫墿锛夛紱涓€鎶婏紙鐨勯噺锛墊core
-fence|n. 鏍呮爮锛涘洿鏍弢core
-prison|n. 鐩戠嫳锛涚洃绂亅core
-grand|adj. 澶э紱瀹忓ぇ鐨剕core
-Aborigine|婢冲ぇ鍒╀簹鍦熻憲|proper
-Sydney|鎮夊凹锛堟境澶у埄浜氬煄甯傦級|proper
-Bondi Beach|閭﹁开娴锋哗|proper
-Chiang Mai|娓呰繄锛堟嘲鍥藉煄甯傦級|proper
-the Bay of Islands|宀涘笨婀緗proper
-the haka|鍝堝崱鑸烇紙浼犵粺姣涘埄浼存瓕鎴樿垶锛墊proper
-Edmonds|鍩冨痉钂欏吂|proper
-Felicity|璐硅帀瑗胯拏|proper
-Tasmanian devil|濉旀柉椹凹浜氭伓榄旓紱琚嬬嵕|proper
-Tasmania|濉旀柉椹凹浜氾紙婢冲ぇ鍒╀簹宸炲悕锛墊proper
-duck-billed platypus|楦槾鍏絴proper
+iconic|adj. 符号的；图标的|extra
+foundation|n. 创建；基础；地基|core
+political|adj. 政治的|core
+didgeridoo|n. 迪吉里杜管|extra
+located|adj. 位于|extra
+equator|n. 赤道|core
+barbecue (abbr. BBQ)|n. (abbr. BBQ) 户外烧烤；烤架|core
+bakery|n. 面包（糕饼）店；面包厂|core
+joint|n. 公共场所（尤指价格低廉的饮食和娱乐场所）； 关节 adj. 联合的；共同的|core
+butcher|n. 肉贩；屠夫；刽子手|core
+premier|adj. 最著名的；第一的；首要的 n. 总理；首相|core
+herb|n. 药草；香草；草本|core
+dim sim|（特指澳大利亚的）点心|extra
+hollow|adj. 中空的；空心的|extra
+vibrate|vt. & vi.（使）振动|extra
+horn|n.（乐器）号|extra
+pitch|n. 音高|extra
+straightforward|adj. 坦率的；简单的|core
+slogan|n. 标语；口号|extra
+minister|n. 部长；大臣；外交使节|core
+prime minister|首相；总理|core
+frog|n. 蛙；青蛙|core
+arrow|n. 箭；箭头|core
+entitle|vt. 给……命名（或题名）；使享有权利|core
+getaway|n. 适合度假的地方|extra
+dive|vi. & n.（dived/dove, dived） 潜水；跳水；俯冲|core
+kayaking|n. 划皮艇|extra
+peak season|高峰季节|core
+freedom|n. 自由；不受……影响的状态|core
+domain|n. 领域；领土；范围|core
+sponsor|vt. 倡议；赞助；主办 n.（法案等的）倡议者；赞助者|core
+liberty|n. 自由|core
+golf|n. 高尔夫球运动|core
+strait|n. 海峡|core
+sample|n. 样本；样品|core
+monument|n. 纪念碑（或馆、堂、像等）；历史遗迹|extra
+kiwi|n. 几维（新西兰鸟）|extra
+geyser|n. 间歇泉|extra
+sulphuric pool|硫黄池|extra
+manuka honey|麦卢卡蜂蜜|extra
+bungee jumping|蹦极跳|extra
+a flock of|一群（羊或鸟）|core
+geothermal park|地热公园|extra
+distribution|n. 分布；分配；分发|core
+pouch|n. 育儿袋；小袋子；荷包|extra
+temporary|adj. 暂时的；短暂的|core
+phase|n. 阶段；时期|core
+trunk|n. 树干|core
+licensed|adj. 得到正式许可的|extra
+license|vt. 批准；许可 n.（= licence）许可证；执照|core
+session|n. 一场；一段时间；会议|core
+frequency|n. 发生率；重复率； （声波或电磁波振动的）频率|core
+violent|adj. 暴力的；猛烈的|extra
+violence|n. 暴力；暴行|core
+nest|n. 巢穴；鸟窝；秘密窝点|core
+mammal|n. 哺乳动物|extra
+biology|n. 生理；生物学|core
+hatch|vi. 孵出；破壳 的 vt. 使孵出；策划；（尤指）密谋|core
+capacity|n. 能力；容量|core
+a handful of|少数人（或物）；一把（的量）|core
+fence|n. 栅栏；围栏|core
+prison|n. 监狱；监禁|core
+grand|adj. 大；宏大的|core
+Aborigine|澳大利亚土著|proper
+Sydney|悉尼（澳大利亚城市）|proper
+Bondi Beach|邦迪海滩|proper
+Chiang Mai|清迈（泰国城市）|proper
+the Bay of Islands|岛屿湾|proper
+the haka|哈卡舞（传统毛利伴歌战舞）|proper
+Edmonds|埃德蒙兹|proper
+Felicity|费莉西蒂|proper
+Tasmanian devil|塔斯马尼亚恶魔；袋獾|proper
+Tasmania|塔斯马尼亚（澳大利亚州名）|proper
+duck-billed platypus|鸭嘴兽|proper
 `,
   3: `
-tale|n. 鏁呬簨锛涘彊杩皘core
-merchant|n. 鍟嗕汉锛涙壒鍙戝晢 adj. 娴蜂笂璐ц繍鐨剕extra
-set sail|璧疯埅锛涘紑鑸獆core
-extend|vt. 鎵╁睍锛涗娇浼搁暱锛涘欢闀縷core
-negotiate|vt. 鍟嗗畾锛涜揪鎴愶紙鍗忚锛?vi. 璋堝垽锛涚鍟嗭紱鍗忓晢|core
-fleet|n. 鑸伴槦锛涙満缇わ紱杞﹂槦|extra
-behold|vt. 锛坆eheld, beheld锛?鐪嬶紱鐪嬭|extra
-league|n. 绛夌骇锛涙按骞筹紱鑱斿悎浼氾紱鑱旇禌|core
-in a league of one鈥檚 own|鐙椋庨獨|core
-royal|adj. 鐨囧鐨勶紱鐜嬪鐨勶紱楂樿吹鐨剕core
-spice|n. 锛堣皟鍛筹級棣欐枡|extra
-withdraw|vi. & vt. 锛坵ithdrew, withdrawn锛?锛堜娇锛夋挙鍥烇紱鎾ょ|core
-withdraw from|閫€鍑猴紱鎾ゅ洖|core
-channel|n. 鑸亾锛涙捣宄★紱棰戦亾|core
-maritime|adj. 娴风殑锛涙捣杩愮殑锛涙捣浜嬬殑|extra
-bond|n. 绾藉甫锛涘叧绯?vt. & vi. 澧炲己淇′换鍏崇郴锛涗娇鐗㈠浐缁撳悎|core
-in hand|鍦ㄦ墜澶达紱鍙緵浣跨敤|core
-politics|n. 鏀挎不锛涙斂娌昏鐐箌core
-profession|n. 鑱屼笟锛涜涓殀core
-tournament|n. 閿︽爣璧涳紱鑱旇禌|core
-mixture|n. 娣峰悎锛涚粨鍚堜綋锛涙贩鍚堢墿|core
-laptop|n. 绗旇鏈數鑴戯紱渚挎惡寮忕數鑴憒core
-coverage|n. 鏂伴椈鎶ラ亾锛涜鐩栬寖鍥磡core
-press conference|璁拌€呮嫑寰呬細锛涙柊闂诲彂甯冧細|core
-applaud|vt. & vi. 榧撴帉 vt. 绉拌禐锛涜禐璧弢core
-tax|vt. 瀵光€︹€﹀緛绋庯紱浣跨撼绋?n. 绋庯紱绋庢|core
-manned|adj. 鏈変汉鎺у埗鐨勶紱闇€浜烘搷绾电殑|extra
-submersible|n. 娼滄按鍣紱鍙綔鑸箌extra
-underwater|adv. 鍦ㄦ按涓?adj. 姘翠笅鐨剕extra
-capsule|n. 鑳跺泭锛涘お绌鸿埍|core
-coral|n. 鐝婄憵|extra
-migration|n. 杩佺Щ锛涜縼寰欙紱绉诲眳|extra
-directory|n. 鍚嶅綍锛涚數璇濆彿鐮佺翱锛?锛堣绠楁満鏂囦欢鎴栫▼搴忕殑锛夌洰褰晐core
-meanwhile|adv. 涓庢鍚屾椂锛涳紙姣旇緝涓ゆ柟闈級瀵规瘮涔嬩笅|extra
-exploit|vt. 寮€鍙戯紱鍒╃敤锛涘墺鍓妡extra
-gallon|n. 鍔犱粦锛堝绉崟浣嶏紝1 鑻卞埗鍔犱粦绾︾瓑浜?4.5 鍗囷級|extra
-murder|vt. 璋嬫潃锛涘嚩鏉€锛涙瘉鍧?n. 璋嬫潃锛涘嚩鏉€|core
-mercy|n. 浠佹厛锛涘鎭曪紱鎭╂儬|core
-possession|n. [usually pl.] 涓汉璐骇锛?鎷ユ湁锛涙帶鍒秥core
-opponent|n. 鍙嶅鑰咃紱瀵规墜锛涚珵浜夎€厊core
-log|vt. 鎶娾€︹€﹁浇鍏ユ寮忚褰曪紱璁板綍 n. 姝ｅ紡璁板綍锛涙棩蹇楋紱鍘熸湪|core
-marine|adj. 娴风殑锛涙捣浜х殑锛涙捣鐢熺殑|extra
-arrest|n. 閫崟锛涙嫎鐣欙紱涓 vt. 閫崟锛涙嫎鐣欙紱闃绘|core
-Marco Polo|椹彲路娉㈢綏|proper
-Columbus|鍝ヤ鸡甯億proper
-Ceylon|閿″叞锛堟柉閲屽叞鍗＄殑鏃хО锛墊proper
-Churchill|涓樺悏灏攟proper
-Ferdinand Magellan|璐硅开鍗楀痉路楹﹀摬浼proper
-Zac Sunderland|鎵庡厠路妗戝痉鍏皘proper
-Robin Lee Graham|缃楀路鏉幝锋牸闆峰巹濮唡proper
+tale|n. 故事；叙述|core
+merchant|n. 商人；批发商 adj. 海上货运的|extra
+set sail|起航；开航|core
+extend|vt. 扩展；使伸长；延长|core
+negotiate|vt. 商定；达成（协议） vi. 谈判；磋商；协商|core
+fleet|n. 舰队；机群；车队|extra
+behold|vt. （beheld, beheld） 看；看见|extra
+league|n. 等级；水平；联合会；联赛|core
+in a league of one’s own|独领风骚|core
+royal|adj. 皇家的；王室的；高贵的|core
+spice|n. （调味）香料|extra
+withdraw|vi. & vt. （withdrew, withdrawn） （使）撤回；撤离|core
+withdraw from|退出；撤回|core
+channel|n. 航道；海峡；频道|core
+maritime|adj. 海的；海运的；海事的|extra
+bond|n. 纽带；关系 vt. & vi. 增强信任关系；使牢固结合|core
+in hand|在手头；可供使用|core
+politics|n. 政治；政治观点|core
+profession|n. 职业；行业|core
+tournament|n. 锦标赛；联赛|core
+mixture|n. 混合；结合体；混合物|core
+laptop|n. 笔记本电脑；便携式电脑|core
+coverage|n. 新闻报道；覆盖范围|core
+press conference|记者招待会；新闻发布会|core
+applaud|vt. & vi. 鼓掌 vt. 称赞；赞赏|core
+tax|vt. 对……征税；使纳税 n. 税；税款|core
+manned|adj. 有人控制的；需人操纵的|extra
+submersible|n. 潜水器；可潜船|extra
+underwater|adv. 在水下 adj. 水下的|extra
+capsule|n. 胶囊；太空舱|core
+coral|n. 珊瑚|extra
+migration|n. 迁移；迁徙；移居|extra
+directory|n. 名录；电话号码簿； （计算机文件或程序的）目录|core
+meanwhile|adv. 与此同时；（比较两方面）对比之下|extra
+exploit|vt. 开发；利用；剥削|extra
+gallon|n. 加仑（容积单位，1 英制加仑约等于 4.5 升）|extra
+murder|vt. 谋杀；凶杀；毁坏 n. 谋杀；凶杀|core
+mercy|n. 仁慈；宽恕；恩惠|core
+possession|n. [usually pl.] 个人财产； 拥有；控制|core
+opponent|n. 反对者；对手；竞争者|core
+log|vt. 把……载入正式记录；记录 n. 正式记录；日志；原木|core
+marine|adj. 海的；海产的；海生的|extra
+arrest|n. 逮捕；拘留；中止 vt. 逮捕；拘留；阻止|core
+Marco Polo|马可·波罗|proper
+Columbus|哥伦布|proper
+Ceylon|锡兰（斯里兰卡的旧称）|proper
+Churchill|丘吉尔|proper
+Ferdinand Magellan|费迪南德·麦哲伦|proper
+Zac Sunderland|扎克·桑德兰|proper
+Robin Lee Graham|罗宾·李·格雷厄姆|proper
 `,
   4: `
-parcel|n. 鍖呰９ vt. 瑁瑰ソ锛涙墦鍖厊core
-jam|n. 鏋滈叡锛涘牭濉瀨core
-mail|n. 閭欢锛涗俊浠讹紱閭斂 vt. 閭瘎锛涘彂鐢甸偖缁檤core
-secondary|adj. 涓鐨勶紱娆¤鐨剕core
-clay|n. 榛忓湡锛涢櫠鍦焲core
-dust|n. 娌欏湡锛涚伆灏?vi. & vt. 鎿︾伆|core
-dusty|adj. 甯冩弧鐏板皹鐨剕extra
-weed|n. 鏉傝崏锛涢噹鑽?vt. & vi. 闄ゆ潅鑽墊core
-chorus|n. 鍚堝敱鏇诧紱鍚堝敱鍥?vt. 鍚堝敱锛涢綈澹拌|core
-a chorus of|榻愬０锛涘紓鍙ｅ悓澹皘core
-cotton|n. 妫夊竷锛涙鑺眧core
-uniform|n. 鏍℃湇锛涘埗鏈?adj. 涓€鑷寸殑锛涚粺涓€鐨剕core
-not to mention|鏇翠笉鐢ㄨ锛涗笖涓嶈|core
-tablet|n. 骞虫澘鐢佃剳锛涗究绗烘湰锛涜嵂鐗噟core
-rubber|n. 姗＄毊锛涢粦鏉挎摝锛涙鑳秥core
-washroom|n. 娲楁墜闂达紱鍘曟墍|core
-rigid|adj. 姝绘澘鐨勶紱鍥烘墽鐨剕core
-bubble|vi. 璧锋场锛涙哺鑵緗extra
-tube|n. 绠″瓙锛涚鐘剁墿|core
-circus|n. 椹垙鍥core
-chemist|n. 鍖栧瀹讹紱鑽墏甯堬紱鑽埧|core
-shade|vt. 缁欌€︹€﹂伄鎸★紙鍏夌嚎锛夛紱鍔犵伅缃╋紱鎶娾€︹€︽秱鏆?n. 闃村噳澶勶紱鐏僵锛涢槾褰遍儴鍒唡core
-jaw|n. 棰岋紱涓嬪反|core
-wrinkle|vt. & vi.锛堜娇鑴镐笂锛夎捣鐨辩汗锛涚毐璧?n. 鐨辩汗|core
-forehead|n. 棰濓紱鍓嶉|core
-hut|n. 绠€闄嬬殑灏忔埧瀛愶紙鎴栨銆佽垗锛墊extra
-housing|n. 浣忔埧锛涗綇瀹厊core
-platform|n. 骞冲彴锛涚珯鍙帮紱鑸炲彴|core
-fireplace|n. 澹佺倝|extra
-saucer|n. 鑼剁锛涙澂鎵榺core
-kettle|n.锛堢儳姘寸敤鐨勶級澹讹紱姘村６|core
-pan|n. 骞冲簳閿咃紱鐑ょ洏|core
-jar|n. 缃愬瓙锛涘潧瀛恷extra
-ripe|adj. 鎴愮啛鐨勶紱鏃舵満鎴愮啛鐨剕core
-grill|n. 鐑ゆ灦锛涚儰鑲夐棣唡extra
-doorway|n. 闂ㄥ彛锛涘嚭鍏ュ彛锛涢棬閬搢extra
-leftover|adj. 鍚冨墿鐨勶紱娈嬬暀鐨?n. 鍚冨墿鐨勯鐗╋紱閬楃暀鐗﹟extra
-handshake|n. 鎻℃墜|extra
-drag|vt. 鎷栵紱鎷?vt. & vi. 缂撴參鑰岃垂鍔涘湴绉诲姩|core
-privilege|n. 浼樻儬寰呴亣锛涚壒鏉億extra
-plug|vt. 灏佸牭锛涜ˉ瓒?n. 鍫靛鐗╋紱鎻掑ご锛涙彃搴core
-disabled|adj. 鏈夋畫鐤剧殑锛涗抚澶辫兘鍔涚殑|core
-resign|vi. & vt. 杈炶亴锛涜緸鍘粅core
-deserve|vt. 鍊煎緱锛涘簲寰楋紱搴斿彈|core
-lately|adv. 鏈€杩戯紱涓嶄箙鍓嶏紱杩戞潵|extra
-input|n. 鎯呭喌锛涗俊鎭紱鎶曞叆锛涜緭鍏?vt. 杈撳叆|core
-tune|n. 鏇茶皟锛涙洸瀛?vt. 璋冮煶锛涜皟鑺傦紱璋冮閬搢core
-contract|vt. 鎰熸煋锛堢柧鐥咃級锛涗笌鈥︹€﹁绔嬪悎 鍚岋紙鎴栧绾︼級 n. 鍚堝悓锛涘绾core
-grant|vt. 鍚屾剰锛涘噯璁?n. 鎷ㄦ|extra
-take (鈥? for granted|璁や负锛堚€︹€︼級鏄悊鎵€褰撶劧锛?瀵癸紙鈥︹€︼級涓嶄簣閲嶈|core
-cardiac|adj. 蹇冭剰鐥呯殑锛涘績鑴忕殑|extra
-circuit|n. 宸″洖锛涚幆褰㈢嚎璺瘄core
-disability|n. 缂洪櫡锛涢殰纰峾core
-consultation|n. 鍜ㄨ锛涘挩璇細|core
-relay|vt. 杞彂锛涜浆鎾?n. 鎺ュ姏璧涳紱鎺ョ彮鐨勪汉|core
-relay to|杞揪缁欌€︹€︼紱杞彂缁欌€︹€core
-criterion|n. 锛坧l. criteria 锛?鏍囧噯锛涘噯鍒欙紱鍘熷垯|core
-stability|n. 绋冲畾锛堟€э級锛涚ǔ鍥猴紙鎬э級|core
-pray|vi. & vt. 浼佺浖锛涚绁穦core
-pray that|浣嗘効|core
-hypothetical|adj. 鍋囪鐨勶紱鍋囧畾鐨剕extra
-Papua New Guinea|宸村竷浜氭柊鍑犲唴浜氾紙鍥藉鍚嶏級|proper
-Ghana|鍔犵撼锛堝浗瀹跺悕锛墊proper
-Congo|鍒氭灉锛堝浗瀹跺悕锛墊proper
-Panama|宸存嬁椹紙鍥藉鍚嶏級|proper
+parcel|n. 包裹 vt. 裹好；打包|core
+jam|n. 果酱；堵塞|core
+mail|n. 邮件；信件；邮政 vt. 邮寄；发电邮给|core
+secondary|adj. 中学的；次要的|core
+clay|n. 黏土；陶土|core
+dust|n. 沙土；灰尘 vi. & vt. 擦灰|core
+dusty|adj. 布满灰尘的|extra
+weed|n. 杂草；野草 vt. & vi. 除杂草|core
+chorus|n. 合唱曲；合唱团 vt. 合唱；齐声说|core
+a chorus of|齐声；异口同声|core
+cotton|n. 棉布；棉花|core
+uniform|n. 校服；制服 adj. 一致的；统一的|core
+not to mention|更不用说；且不说|core
+tablet|n. 平板电脑；便笺本；药片|core
+rubber|n. 橡皮；黑板擦；橡胶|core
+washroom|n. 洗手间；厕所|core
+rigid|adj. 死板的；固执的|core
+bubble|vi. 起泡；沸腾|extra
+tube|n. 管子；管状物|core
+circus|n. 马戏团|core
+chemist|n. 化学家；药剂师；药房|core
+shade|vt. 给……遮挡（光线）；加灯罩；把……涂暗 n. 阴凉处；灯罩；阴影部分|core
+jaw|n. 颌；下巴|core
+wrinkle|vt. & vi.（使脸上）起皱纹；皱起 n. 皱纹|core
+forehead|n. 额；前额|core
+hut|n. 简陋的小房子（或棚、舍）|extra
+housing|n. 住房；住宅|core
+platform|n. 平台；站台；舞台|core
+fireplace|n. 壁炉|extra
+saucer|n. 茶碟；杯托|core
+kettle|n.（烧水用的）壶；水壶|core
+pan|n. 平底锅；烤盘|core
+jar|n. 罐子；坛子|extra
+ripe|adj. 成熟的；时机成熟的|core
+grill|n. 烤架；烤肉餐馆|extra
+doorway|n. 门口；出入口；门道|extra
+leftover|adj. 吃剩的；残留的 n. 吃剩的食物；遗留物|extra
+handshake|n. 握手|extra
+drag|vt. 拖；拽 vt. & vi. 缓慢而费力地移动|core
+privilege|n. 优惠待遇；特权|extra
+plug|vt. 封堵；补足 n. 堵塞物；插头；插座|core
+disabled|adj. 有残疾的；丧失能力的|core
+resign|vi. & vt. 辞职；辞去|core
+deserve|vt. 值得；应得；应受|core
+lately|adv. 最近；不久前；近来|extra
+input|n. 情况；信息；投入；输入 vt. 输入|core
+tune|n. 曲调；曲子 vt. 调音；调节；调频道|core
+contract|vt. 感染（疾病）；与……订立合 同（或契约） n. 合同；契约|core
+grant|vt. 同意；准许 n. 拨款|extra
+take (…) for granted|认为（……）是理所当然； 对（……）不予重视|core
+cardiac|adj. 心脏病的；心脏的|extra
+circuit|n. 巡回；环形线路|core
+disability|n. 缺陷；障碍|core
+consultation|n. 咨询；咨询会|core
+relay|vt. 转发；转播 n. 接力赛；接班的人|core
+relay to|转达给……；转发给……|core
+criterion|n. （pl. criteria ） 标准；准则；原则|core
+stability|n. 稳定（性）；稳固（性）|core
+pray|vi. & vt. 企盼；祈祷|core
+pray that|但愿|core
+hypothetical|adj. 假设的；假定的|extra
+Papua New Guinea|巴布亚新几内亚（国家名）|proper
+Ghana|加纳（国家名）|proper
+Congo|刚果（国家名）|proper
+Panama|巴拿马（国家名）|proper
 `,
   5: `
-bounce|vi. & vt.锛堜娇锛夊脊璧凤紱涓婁笅鏅冨姩 n. 寮规€э紱寮硅烦锛涙椿鍔泑core
-bounce around|韫︽潵韫﹀幓锛涘脊鏉ュ脊鍘粅core
-aptitude|n. 澶╄祫锛涘ぉ璧媩extra
-head start|璧锋鍓嶇殑浼樺娍|core
-scenario|n. 璁炬兂锛涙柟妗堬紱棰勬祴|extra
-lawyer|n. 寰嬪笀|core
-assemble|vt. 缁勮锛涜閰?vi. & vt. 鏀堕泦锛涜仛闆嗭紱闆嗗悎|extra
-drawer|n. 鎶藉眽|core
-a chest of drawers|鎶藉眽鏌渱core
-breast|n. 涔虫埧锛涜兏閮▅core
-hydrogen|n. 姘紱姘㈡皵|core
-radium|n. 闀瓅core
-wrist|n. 鎵嬭厱锛涜厱鍏宠妭|core
-bridegroom|n. 鏂伴儙|core
-geometry|n. 鍑犱綍瀛︼紱鍑犱綍鍥惧舰|core
-debt|n. 鍊哄姟锛涙瑺娆緗core
-categorise|vt. 鎶娾€︹€﹀垎绫伙紙鍔犱互褰掔被锛墊extra
-profile|n. 绠€浠嬶紱姒傝堪锛涗晶闈㈣疆寤?vt. 鎵艰浠嬬粛锛涙杩帮紱鍐欑畝浠媩core
-participant|n. 鍙備笌鑰咃紱鍙傚姞鑰厊extra
-code|n. 浠ｇ爜锛涘瘑鐮?vt. 缂栫爜锛涙妸鈥︹€﹁瘧鎴愬瘑鐮亅extra
-orient|vt. 浣块€傚簲锛涗娇闈㈠锛涚‘瀹氭柟鍚憒extra
-detective|n. 渚︽帰锛涜鎺core
-graphic|n. 鍥捐〃锛涘浘褰紱鍥剧敾 adj. 缁樼敾鐨勶紱鍥炬鐨剕extra
-estate|n. 搴勫洯锛涗綇瀹呭尯锛涘伐涓氬尯|core
-(real) estate agent|锛坮eal锛塭state agent 鎴垮湴浜х粡绾汉|core
-accountant|n. 浼氳锛涗細璁″笀|extra
-spy|n. 瀵嗘帰锛涢棿璋?vi. 浠庝簨闂磋皪娲诲姩 vt. 绐佺劧鐪嬭锛涘彂鐜皘core
-justice|n. 鍏钩锛涘叕姝ｏ紱鍚堢悊|core
-accuse|vt. 鎺у憡锛涙帶璇夛紱璋磋矗|core
-come to a conclusion|寰楀嚭缁撹|core
-greedy|adj. 璐┆鐨勶紱璐績鐨剕core
-entrepreneur|n. 鍒涗笟鑰咃紱浼佷笟瀹秥extra
-receptionist|n. 鎺ュ緟鍛榺core
-CV (NAmE r茅sum茅)|n. 灞ュ巻锛涚畝鍘唡extra
-socialist|adj. 绀句細涓讳箟鐨?n. 绀句細涓讳箟鑰厊core
-communist|adj. 鍏变骇涓讳箟鐨?n. 鍏变骇涓讳箟鑰厊core
-dedicate|vt. 鎶娾€︹€﹀鐚粰|extra
-fox|n. 鐙愮嫺锛涚嫛鐚剧殑浜簗core
-council|n. 濮斿憳浼氾紱甯傛斂鏈嶅姟鏈烘瀯|core
-canal|n. 杩愭渤锛涚亴婧夋笭|core
-attend to|鍏虫€€锛涚収鏂欙紱澶勭悊|core
-supervise|vt. & vi. 涓荤锛涙寚瀵硷紱鐩戠潱|extra
-handwriting|n. 涔︽硶锛涗功鍐欙紱绗旇抗|core
-disk (disc)|n. 纾佺洏锛涚洏|core
-parking|n. 鍋滆溅浣嶏紱鍋滆溅|core
-camel|n. 楠嗛┘|core
-fry|n. 娌圭厧鐨勯鐗?vt. & vi. 娌圭偢锛涙补鐐掞紱娌圭厧|core
-purse|n. 閽卞寘锛涚毊澶瑰瓙锛堝挨鎸囧コ鐢級|core
-sew|vi. & vt. 锛坰ewed, sewn/sewed锛夌紳鍒讹紱缂濓紱 鍋氶拡绾挎椿|core
-knit|vt. & vi. 缂栫粐锛涢拡缁囷紱锛堜娇锛夌揣瀵嗙粨鍚?n. 缂栫粐鐨勮。鏈嶏紱閽堢粐琛珅extra
-wool|n. 姣涳紱姣涚嚎锛涙瘺鏂檤core
-intermediate|adj. 涓骇鐨勶紱涓瓑鐨勶紱涓棿鐨剕extra
-priority|n. 浼樺厛浜嬮」锛涢瑕佺殑浜嬶紱浼樺厛|core
-proficiency|n. 鐔熺粌锛涘ù鐔燂紱绮鹃€殀extra
-cage|n. 绗煎瓙 vt. 鍏冲湪绗煎瓙閲寍core
-collar|n. 锛堝姩鐗╋級棰堝湀锛涜。棰唡core
-flea collar|鐏殼棰堝湀|core
-finance|n. 璧勯噾锛涜储鏀匡紱閲戣瀺 vt. 鎻愪緵璧勯噾|core
-receipt|n. 鏀舵嵁锛涙帴鏀秥core
-certificate|n. 鍚堟牸璇佷功锛涜瘉鏄巪core
-employer|n. 闆囦富锛涜€佹澘|extra
-desert|n. 娌欐紶锛涜崚婕爘core
-acquire|vt. 鑾峰緱锛涜喘寰梶core
-Marie Curie|鐜涗附路灞呴噷锛堝眳閲屽か浜猴級|proper
-The Communist Manifesto|銆婂叡浜у厷瀹ｈ█銆媩proper
-Olivia|濂ュ埄缁村▍|proper
-PETS (Public English Test System)|鍏ㄥ浗鑻辫绛夌骇鑰冭瘯|proper
+bounce|vi. & vt.（使）弹起；上下晃动 n. 弹性；弹跳；活力|core
+bounce around|蹦来蹦去；弹来弹去|core
+aptitude|n. 天资；天赋|extra
+head start|起步前的优势|core
+scenario|n. 设想；方案；预测|extra
+lawyer|n. 律师|core
+assemble|vt. 组装；装配 vi. & vt. 收集；聚集；集合|extra
+drawer|n. 抽屉|core
+a chest of drawers|抽屉柜|core
+breast|n. 乳房；胸部|core
+hydrogen|n. 氢；氢气|core
+radium|n. 镭|core
+wrist|n. 手腕；腕关节|core
+bridegroom|n. 新郎|core
+geometry|n. 几何学；几何图形|core
+debt|n. 债务；欠款|core
+categorise|vt. 把……分类（加以归类）|extra
+profile|n. 简介；概述；侧面轮廓 vt. 扼要介绍；概述；写简介|core
+participant|n. 参与者；参加者|extra
+code|n. 代码；密码 vt. 编码；把……译成密码|extra
+orient|vt. 使适应；使面对；确定方向|extra
+detective|n. 侦探；警探|core
+graphic|n. 图表；图形；图画 adj. 绘画的；图案的|extra
+estate|n. 庄园；住宅区；工业区|core
+(real) estate agent|（real）estate agent 房地产经纪人|core
+accountant|n. 会计；会计师|extra
+spy|n. 密探；间谍 vi. 从事间谍活动 vt. 突然看见；发现|core
+justice|n. 公平；公正；合理|core
+accuse|vt. 控告；控诉；谴责|core
+come to a conclusion|得出结论|core
+greedy|adj. 贪婪的；贪心的|core
+entrepreneur|n. 创业者；企业家|extra
+receptionist|n. 接待员|core
+CV (NAmE résumé)|n. 履历；简历|extra
+socialist|adj. 社会主义的 n. 社会主义者|core
+communist|adj. 共产主义的 n. 共产主义者|core
+dedicate|vt. 把……奉献给|extra
+fox|n. 狐狸；狡猾的人|core
+council|n. 委员会；市政服务机构|core
+canal|n. 运河；灌溉渠|core
+attend to|关怀；照料；处理|core
+supervise|vt. & vi. 主管；指导；监督|extra
+handwriting|n. 书法；书写；笔迹|core
+disk (disc)|n. 磁盘；盘|core
+parking|n. 停车位；停车|core
+camel|n. 骆驼|core
+fry|n. 油煎的食物 vt. & vi. 油炸；油炒；油煎|core
+purse|n. 钱包；皮夹子（尤指女用）|core
+sew|vi. & vt. （sewed, sewn/sewed）缝制；缝； 做针线活|core
+knit|vt. & vi. 编织；针织；（使）紧密结合 n. 编织的衣服；针织衫|extra
+wool|n. 毛；毛线；毛料|core
+intermediate|adj. 中级的；中等的；中间的|extra
+priority|n. 优先事项；首要的事；优先|core
+proficiency|n. 熟练；娴熟；精通|extra
+cage|n. 笼子 vt. 关在笼子里|core
+collar|n. （动物）颈圈；衣领|core
+flea collar|灭蚤颈圈|core
+finance|n. 资金；财政；金融 vt. 提供资金|core
+receipt|n. 收据；接收|core
+certificate|n. 合格证书；证明|core
+employer|n. 雇主；老板|extra
+desert|n. 沙漠；荒漠|core
+acquire|vt. 获得；购得|core
+Marie Curie|玛丽·居里（居里夫人）|proper
+The Communist Manifesto|《共产党宣言》|proper
+Olivia|奥利维娅|proper
+PETS (Public English Test System)|全国英语等级考试|proper
 `,
 };
 
@@ -353,4 +353,3 @@ const VOCABULARY = Object.entries(RAW_VOCABULARY).flatMap(([unit, raw]) =>
     return { id: `${unit}-${index + 1}`, unit: Number(unit), word: word.trim(), meaning: meaning.trim(), type: type.trim() };
   })
 );
-
